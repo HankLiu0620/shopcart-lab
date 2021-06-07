@@ -1,0 +1,6 @@
+Spring:
+  application:
+    name: shopCart
+  profiles:
+    active:
+    - dev

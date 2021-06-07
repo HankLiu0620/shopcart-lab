@@ -1,0 +1,22 @@
+Spring:
+  #Db
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/shopcart
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 1qaz1qaz
+  flyway:
+    locations: classpath:/db/migration/
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+good:
+  service:
+    url: http://18.183.144.77:8080
+
+order:
+  service:
+    url: http://18.183.144.77:8081
